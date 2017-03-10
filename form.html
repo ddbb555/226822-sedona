@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="logo">
+      <a href="index.html" class="logo__link"><img src="http://placehold.it/80x80" width="100" height="80" alt="Логотип"></a>
+    </div>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Open</button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
+        <li class="main-nav__item"><a href="photo.html" class="main-nav__link">фото и видео</a></li>
+        <li class="main-nav__item"><a href="form.html" class="main-nav__link">Форма отзыва</a></li>
+        <li class="main-nav__item"><a href="https://htmlacademy.ru/" class="main-nav__link">HTML academy</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="intro">
+      <div class="intro__inner">
+        <img src="http://placehold.it/320x155" width="320" height="155" alt="Привет Седона">
+        <h1 class="intro__title">Оставьте свой отзыв</h1>
+        <p class="intro__desription">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </div>
+    </section>
+    <form class="form-review" action="https://echo.htmlacademy.ru/" method="post">
+      <div class="form-review__inner">
+        <div class="fields-group  fields-group--review">
+          <h2 class="form-review__title">Представьтесь:</h2>
+          <label class="field-text  fields-group__item" for="name">
+            <span>ИМЯ*:</span>
+            <input class="field-text__input" type="text" id="name" name="name" placeholder="Петр">
+          </label>
+          <label class="field-text  fields-group__item" for="surname">
+            <span>Фамилия*:</span>
+            <input class="field-text__input" type="text" id="surname" name="surname" placeholder="Иванов">
+          </label>
+          <label class="field-text  fields-group__item" for="second-name">
+            <span>Отчество*:</span>
+            <input class="field-text__input" type="text" id="second-name" name="second-name" placeholder="Александрович">
+          </label>
+        </div>
+        <div class="fields-group  fields-group--contacts">
+          <h2 class="form-review__title">Контактная информация:</h2>
+          <label class="field-text  fields-group__item" for="phone">
+            <span>Контактный телефон*:</span>
+            <input class="field-text__input" type="text" id="phone" name="phone" placeholder="Петр">
+          </label>
+          <label class="field-text  fields-group__item" for="mail">
+            <span>Почта*:</span>
+            <input class="field-text__input" type="text" id="mail" name="mail" placeholder="Иванов">
+          </label>
+        </div>
+        <div class="field-radio  field-radio--custom">
+          <h2 class="field-radio__title">Посещенные достопримечательности:</h2>
+          <div class="field-radio__input-wrap">
+            <label class="field-radio__name" for="positive">
+              <input class="field-radio__input" type="radio" name="radio" id="positive" checked>
+              <span class="field-radio__name-text">Скорее положительное</span>
+            </label>
+            <label class="field-radio__name" for="negative">
+              <input class="field-radio__input" type="radio" name="radio" id="negative">
+              <span class="field-radio__name-text">Скорее отрицательное</span>
+            </label>
+            <label class="field-radio__name" for="uncertain">
+              <input class="field-radio__input" type="radio" name="radio" id="uncertain" checked>
+              <span class="field-radio__name-text">Затрудняюсь ответить</span>
+            </label>
+          </div>
+        </div>
+        <div class="field-checkbox  field-checkbox--custom">
+          <h2 class="field-checkbox__title">посещенные достопримечательности:</h2>
+          <div class="field-checkbox__input-wrap">
+            <label class="field-checkbox__name" for="devil-bridge">
+              <input class="field-checkbox__input" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
+              <span class="field-checkbox__name-text">Мост Дьявола</span>
+            </label>
+            <label class="field-checkbox__name" for="slide-park">
+              <input class="field-checkbox__input" type="checkbox" name="slide-park" id="slide-park" checked>
+              <span class="field-checkbox__name-text">Слайд-парк</span>
+            </label>
+            <label class="field-checkbox__name" for="bell-mountain">
+              <input class="field-checkbox__input" type="checkbox" name="bell-mountain" id="bell-mountain">
+              <span class="field-checkbox__name-text">Гора-Колокол</span>
+            </label>
+            <label class="field-checkbox__name" for="red-rocks">
+              <input class="field-checkbox__input" type="checkbox" name="red-rocks" id="red-rocks" checked>
+              <span class="field-checkbox__name-text">Красные скалы</span>
+            </label>
+          </div>
+        </div>
+        <label class="field-text">
+          <h2 class="field-text__name">Опишите свои эмоции:</h2>
+          <div class="field-text__input-wrap">
+            <textarea class="field-text__input" placeholder="textarea">Опишите подробно все свои восторги </textarea>
+          </div>
+        </label>
+        <input class="btn" type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
+      </div>
+    </form>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__inner">
+      <h2 class="main-footer__title">#visitsedona</h2>
+      <div class="social-links">
+        <a href="#" class="social-link  social-link--twitter">Twitter</a>
+        <a href="#" class="social-link  social-link--fb">Facebook</a>
+        <a href="#" class="social-link  social-link--inst">Youtube</a>
+      </div>
+      <div class="copyright">
+        <h3 class="copyright__title">Разработано</h3>
+        <a class="copyright__link" href="https://htmlacademy.ru/">HTMLACADEMY</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
